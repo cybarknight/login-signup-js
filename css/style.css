@@ -1,0 +1,104 @@
+/* Set the body font and background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style for the main container holding both forms */
+.container {
+  display: flex;
+  gap: 30px; /* Space between Sign Up and Login forms */
+}
+
+/* Styling for each form container */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  width: 300px;
+}
+
+/* Styling for form headers */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for input fields */
+input {
+  width: 100%; /* Full width of the form container */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for buttons */
+button {
+  width: 100%; /* Full width of the form container */
+  padding: 10px;
+  background-color: #5cb85c; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Hand cursor on hover */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+}
+
+.icon i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Hover effect for icons */
+.icon:hover {
+  color: #000;
+}
+
+/* Gmail specific icon styling */
+.icon.gmail {
+  color: #DB4437; /* Gmail's red color */
+}
+
+/* GitHub specific icon styling */
+.icon.github {
+  color: #333; /* GitHub's black color */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the forms vertically */
+    align-items: center;
+  }
+
+  .form-container {
+    width: 100%; /* Make the forms take up full width on smaller screens */
+    max-width: 350px;
+  }
+}
